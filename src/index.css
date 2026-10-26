@@ -34,23 +34,23 @@
 
 [data-theme='dark'] {
   --bg-primary: #100d0a;
-  --bg-secondary: #18140f;
-  --bg-card: #221b14;
+  --bg-secondary: #180f20;
+  --bg-card: #21142b;
   --text-primary: #f6efe2;
-  --text-secondary: #ccbfad;
-  --text-muted: #9c8e7b;
-  --border-color: #3d3124;
+  --text-secondary: #cfc2b2;
+  --text-muted: #9f8f7c;
+  --border-color: #3b2548;
   --border-accent: #f97316;
-  --accent-color: #ea580c;
-  --accent-hover: #f97316;
-  --accent-light: rgba(234, 88, 12, 0.22);
+  --accent-color: #f97316;
+  --accent-hover: #ea580c;
+  --accent-light: rgba(249, 115, 22, 0.22);
   --btn-text: #ffffff;
   --gold-accent: #f59e0b;
   --danger-color: #f43f5e;
   --danger-hover: #fb7185;
   --danger-light: rgba(244, 63, 94, 0.16);
   --warning-bg: #291807;
-  --warning-border: #ea580c;
+  --warning-border: #f97316;
   --warning-text: #fed7aa;
   --badge-cntt-bg: #0f2537;
   --badge-cntt-text: #7dd3fc;
@@ -59,23 +59,23 @@
   --badge-ngoaingu-bg: #142a1b;
   --badge-ngoaingu-text: #86efac;
   --shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
-  --shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.85), 0 0 16px rgba(234, 88, 12, 0.2);
+  --shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.85), 0 0 16px rgba(249, 115, 22, 0.2);
 }
 
 [data-theme='dark'] .brand svg {
-  color: #ea580c;
-  filter: drop-shadow(0 0 6px rgba(234, 88, 12, 0.4));
+  color: #f97316;
+  filter: drop-shadow(0 0 6px rgba(249, 115, 22, 0.4));
 }
 
 [data-theme='dark'] .loading-spinner {
-  border-color: #3d3124;
-  border-top-color: #ea580c;
-  filter: drop-shadow(0 0 8px rgba(234, 88, 12, 0.4));
+  border-color: #3b2548;
+  border-top-color: #f97316;
+  filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.4));
 }
 
 [data-theme='dark'] .book-cover-wrapper {
-  background-color: #171b16;
-  border-color: #2b362c;
+  background-color: #141c16;
+  border-color: #243527;
 }
 
 * {
