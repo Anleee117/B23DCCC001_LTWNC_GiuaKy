@@ -205,10 +205,18 @@ a {
 }
 
 .alert-banner.warning {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  max-width: 480px;
+  width: calc(100% - 40px);
+  z-index: 9999;
   background-color: var(--warning-bg);
-  border: 1px solid var(--warning-border);
+  border: 2px solid var(--warning-border);
   color: var(--warning-text);
-  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 16px rgba(249, 115, 22, 0.3);
+  animation: slideInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-bottom: 0;
 }
 
 .alert-banner.error {
@@ -639,5 +647,26 @@ a {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .alert-banner.warning {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    width: auto;
+    max-width: none;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { AlertCircle, AlertTriangle, X } from 'lucide-react';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { clearBorrowWarning, fetchBooks, returnBook } from '../features/books/booksSlice';
@@ -11,6 +11,15 @@ export const HomePage: React.FC = () => {
   const { loading, error, borrowWarning, borrowedBooks } = useAppSelector(
     (state) => state.books
   );
+
+  useEffect(() => {
+    if (borrowWarning) {
+      const timer = setTimeout(() => {
+        dispatch(clearBorrowWarning());
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [borrowWarning, dispatch]);
 
   const handleReturn = useCallback(
     (bookId: string) => {
