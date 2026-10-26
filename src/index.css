@@ -27,7 +27,7 @@
   --shadow: 0 4px 14px rgba(42, 27, 14, 0.08);
   --shadow-hover: 0 10px 26px rgba(42, 27, 14, 0.15), 0 0 12px rgba(184, 134, 11, 0.2);
   --radius: 10px;
-  --font-heading: 'Cinzel', Georgia, 'Times New Roman', serif;
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
   --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -157,8 +157,8 @@ a {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   transition: var(--transition);
-  font-family: var(--font-heading);
-  letter-spacing: 0.03em;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
 }
 
 .nav-link:hover {
@@ -292,8 +292,8 @@ a {
   font-weight: 600;
   cursor: pointer;
   transition: var(--transition);
-  font-family: var(--font-heading);
-  letter-spacing: 0.04em;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
 }
 
 .category-tab-btn:hover {
@@ -390,13 +390,12 @@ a {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 700;
-  font-family: var(--font-heading);
-  letter-spacing: 0.06em;
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
   padding: 4px 12px;
   border-radius: 9999px;
   margin-bottom: 10px;
   align-self: flex-start;
-  text-transform: uppercase;
 }
 
 .badge-CNTT {
@@ -459,10 +458,9 @@ a {
   padding: 11px 18px;
   border-radius: var(--radius);
   font-size: 0.875rem;
-  font-weight: 700;
-  font-family: var(--font-heading);
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
   cursor: pointer;
   border: 1px solid transparent;
   transition: var(--transition);
