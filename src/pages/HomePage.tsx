@@ -36,7 +36,15 @@ export const HomePage: React.FC = () => {
     <div>
       {borrowWarning && (
         <div className="alert-banner warning">
-          <span>{borrowWarning}</span>
+          {borrowWarning.includes('. ') ? (
+            borrowWarning.split('. ').map((part, index, array) => (
+              <div key={part}>
+                {part}{index < array.length - 1 ? '.' : ''}
+              </div>
+            ))
+          ) : (
+            <div>{borrowWarning}</div>
+          )}
         </div>
       )}
 
