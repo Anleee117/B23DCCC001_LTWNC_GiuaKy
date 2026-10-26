@@ -34,12 +34,12 @@
 
 [data-theme='dark'] {
   --bg-primary: #100d0a;
-  --bg-secondary: #180f20;
+  --bg-secondary: #241710;
   --bg-card: #21142b;
   --text-primary: #f6efe2;
   --text-secondary: #cfc2b2;
   --text-muted: #9f8f7c;
-  --border-color: #3b2548;
+  --border-color: #4d3624;
   --border-accent: #f97316;
   --accent-color: #f97316;
   --accent-hover: #ea580c;
@@ -54,7 +54,7 @@
   --warning-text: #fed7aa;
   --badge-cntt-bg: #0f2537;
   --badge-cntt-text: #7dd3fc;
-  --badge-kinhte-bg: #2b1b0e;
+  --badge-kinhte-bg: #351f10;
   --badge-kinhte-text: #fdba74;
   --badge-ngoaingu-bg: #142a1b;
   --badge-ngoaingu-text: #86efac;
@@ -68,14 +68,14 @@
 }
 
 [data-theme='dark'] .loading-spinner {
-  border-color: #3b2548;
+  border-color: #4d3624;
   border-top-color: #f97316;
   filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.4));
 }
 
 [data-theme='dark'] .book-cover-wrapper {
   background-color: #141c16;
-  border-color: #243527;
+  border-color: #273b2b;
 }
 
 * {
