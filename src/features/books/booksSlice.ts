@@ -44,6 +44,7 @@ export const booksSlice = createSlice({
           author: targetBook.author,
           category: targetBook.category,
           borrowedAt: new Date().toISOString(),
+          coverImage: targetBook.coverImage,
         });
         state.borrowWarning = null;
       }

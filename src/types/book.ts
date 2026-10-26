@@ -9,10 +9,12 @@ export interface Book {
   category: BookCategory;
   publishedYear: number;
   availableCopies: number;
+  coverImage?: string;
 }
 
 export type BorrowedBook = Pick<Book, 'id' | 'title' | 'author' | 'category'> & {
   borrowedAt: string;
+  coverImage?: string;
 };
 
 export type CategoryStats = Record<BookCategory, number>;

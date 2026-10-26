@@ -19,6 +19,16 @@ const BookItemComponent: React.FC<BookItemProps> = ({ book, onBorrow }) => {
   return (
     <div className="book-card" data-testid={`book-card-${book.id}`}>
       <div>
+        {book.coverImage && (
+          <div className="book-cover-wrapper">
+            <img
+              src={book.coverImage}
+              alt={book.title}
+              className="book-cover-img"
+              loading="lazy"
+            />
+          </div>
+        )}
         <span className={`book-badge ${categoryClassMap[book.category] ?? 'badge-CNTT'}`}>
           {book.category}
         </span>

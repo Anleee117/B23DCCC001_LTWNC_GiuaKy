@@ -26,11 +26,20 @@ export const BorrowedBooksList: React.FC<BorrowedBooksListProps> = ({
       <div className="borrowed-list">
         {borrowedBooks.map((book) => (
           <div key={book.id} className="borrowed-item">
-            <div className="borrowed-info">
-              <h4>{book.title}</h4>
-              <p>
-                Tác giả: {book.author} | Thể loại: {book.category}
-              </p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
+              {book.coverImage && (
+                <img
+                  src={book.coverImage}
+                  alt={book.title}
+                  className="borrowed-thumb"
+                />
+              )}
+              <div className="borrowed-info">
+                <h4>{book.title}</h4>
+                <p>
+                  Tác giả: {book.author} | Thể loại: {book.category}
+                </p>
+              </div>
             </div>
             <div className="borrowed-btn-wrapper">
               <button
