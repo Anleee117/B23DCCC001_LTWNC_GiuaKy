@@ -217,6 +217,9 @@ a {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 16px rgba(249, 115, 22, 0.3);
   animation: slideInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   margin-bottom: 0;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
 }
 
 .alert-banner.error {

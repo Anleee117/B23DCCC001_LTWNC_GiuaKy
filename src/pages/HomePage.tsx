@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect } from 'react';
-import { AlertCircle, AlertTriangle, X } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import { useAppDispatch, useAppSelector } from '../app/hooks';
 import { clearBorrowWarning, fetchBooks, returnBook } from '../features/books/booksSlice';
 import { SearchBar } from '../components/SearchBar';
@@ -28,10 +28,6 @@ export const HomePage: React.FC = () => {
     [dispatch]
   );
 
-  const handleDismissWarning = useCallback(() => {
-    dispatch(clearBorrowWarning());
-  }, [dispatch]);
-
   const handleRetry = useCallback(() => {
     dispatch(fetchBooks());
   }, [dispatch]);
@@ -40,18 +36,7 @@ export const HomePage: React.FC = () => {
     <div>
       {borrowWarning && (
         <div className="alert-banner warning">
-          <div className="alert-left">
-            <AlertTriangle size={20} />
-            <span>{borrowWarning}</span>
-          </div>
-          <button
-            type="button"
-            className="alert-close-btn"
-            onClick={handleDismissWarning}
-            aria-label="Đóng thông báo"
-          >
-            <X size={18} />
-          </button>
+          <span>{borrowWarning}</span>
         </div>
       )}
 
